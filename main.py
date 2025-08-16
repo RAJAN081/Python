@@ -375,3 +375,315 @@
 
 # print(dir(str))
 
+# a = 1 
+
+# while a <= 30:
+#     print(a)
+#     a = a + 1
+
+
+# a = int(input("tell your number"))
+
+# rev = 0
+
+# while a > 0:
+#     rev = rev *10 + a % 10
+#     a = a //10
+
+# print(rev)
+
+
+# a = int(input("tell your number"))
+
+# copy = a
+# rev = 0
+
+# while a > 0:
+#     rev = rev *10 + a % 10
+#     a = a //10
+
+# if copy == rev:
+#     print("pallindromic number")
+# else:
+#     print("not a pallindromic number")
+
+
+
+# import random
+
+# num = random.randint(1,10)
+
+# tries = 0
+
+# while True:
+#     guess = int(input("please guess your number between 1 and 10 :- "))
+#     if num == guess:
+#         tries +=1
+#         print(f"you are right you guessed the number is {tries} tries")
+#         break
+
+#     elif num < guess:
+#         print("go a little lower")
+#         tries +=1
+    
+#     elif num > guess:
+#         print("go a little higher")
+#         tries +=1
+
+#     else:
+#         tries +=1 
+#         print("sorry you are wrong")
+
+# print(12)
+
+
+# def hello():
+#     print("this is a hello function so I am doing hello")
+
+
+# hello()
+
+
+# def hello(name,age):
+#     print(f"your name is {name} and your age is {age}")
+
+# hello(age = 22,name = "akarsh")
+
+
+# def pallindrome(st):
+#     rev = ""
+#     for i in range(len(st)-1,-1,-1):
+#         rev = rev + st[i]
+    
+#     if rev == st:
+#         print(f"{st} is a pallindrome")
+#     else:
+#         print(f"{st} is not a not a pallindrome")
+
+
+# pallindrome("NAMAN")
+# pallindrome("CURSOR")
+
+# def hello():
+#     return "hello how are you"
+
+# print(hello())
+
+
+# a = [12,13,14,15,16,34.5]
+
+
+# #1st way using index
+
+# for i in range(len(a)):
+#     print(a[i])
+
+# #2nd way directly on values
+
+# for i in a:
+#     print(i)
+
+# l = [-45,67,12,-68,-69,34]
+
+# print("positive elements are ")
+# for i in l:
+#     if i >= 0:
+#         print(i)
+# print("negitive elements are")
+
+# for i in l:
+#     if i < 0:
+#         print(i)
+
+# l = [12,435,67,89,23,25,69]
+
+# sum = 0
+
+# for i in l:
+#     sum = sum + i
+
+# print(sum/len(l))
+
+
+
+
+
+# l = [12,567,43,235,347,568,45,7]
+
+# largest = l[0]
+# index = 0
+
+# for i in range(len(l)):
+#     if l[i] > largest:
+#         largest = l[i]
+#         index = i
+
+# print(f"your largest number is {largest} at index {index}")
+
+
+# l = [12,16,13,19,17]
+
+# largest = l[0]
+# sec_largest = l[0]
+
+# for i in l:
+#     if i > largest:
+#         sec_largest = largest
+#         largest = i
+#     elif i > sec_largest:
+#         sec_largest = i
+
+
+# print(sec_largest, largest)
+
+
+
+# a = [12,13,18,15,16]
+
+# for i in range(len(a)-1):
+#     if a[i] < a[i+1]:
+#         continue
+#     else:
+#         print("your list is not sorted")
+#         break
+# else:
+#     print("your list is sorted")
+
+
+
+# a = (1,2,3,4,5,5,5.5,print(),"hello")
+
+
+# count = a.count(5)
+
+# print(count)
+
+
+# a = (1,)
+
+# print(type(a))
+
+
+
+# a = {1,8,9,"hello",2,3,4,5}
+
+# for i in a:
+#     print(i)
+
+# a = {8,1,2,3,4}
+
+# a.clear()
+
+# print(a)
+
+
+# a = {1,2,3,4,5}
+# b = {4,5,6,7,8}
+
+# b -= a
+
+# print(b)
+
+# d = {10:100,20:200,30:300,40:400}
+
+# d[10] = 100 #updating
+# d[50] = 500 # creating
+# del d[30] # deleting 
+
+# print(d)
+
+
+
+
+# d = {10:100,20:200,30:300,40:400}
+
+# print(d.items())
+
+# d1 = {10:100,20:200,40:300}
+# d2 = {40:400,50:500,60:600}
+
+
+# for i in d2:
+#     d1[i] = d2[i]
+
+# print(d1)
+
+# d1 = {10:100,20:200,40:300}
+# sum = 0
+
+# for i in d1:
+#     sum = sum + d1[i]
+
+# print(sum)
+
+
+# a = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,7,8]
+
+# d = {}
+# for i in a:
+#     if i in d.keys():
+#         d[i] +=1 
+#     else:
+#         d[i] = 1
+
+# print(d)
+
+
+# d1 = {10:100,20:200,40:300}
+# d2 = {40:400,50:500,60:600}
+
+# for i in d2:
+#     if i in d1.keys():
+#         d1[i] += d2[i]
+#     else:
+#         d1[i] = d2[i]
+
+
+
+# a = int(input("tell your number :- "))
+
+# try:
+#     print(10/a)
+
+# except Exception as err:
+#     print(f"sorry there is an err as {err}")
+
+# else:
+#     print("good there is no exception")
+
+# finally:
+#     print("i will run no matter what")
+
+
+# print("ok i have done the division")
+
+
+
+
+# age = int(input("tell your age :- "))
+
+# try:
+
+#     if age < 10 or age > 18:
+#         raise ValueError("your age must be between 10 and 18")
+#     else:
+#         print("welcome to the club")
+
+# except Exception as err:
+#     print(f"an error occured as {err}")
+
+
+# print("the club will start soon")
+
+#File handling
+
+# r = open("superman.txt",'a')
+
+# r.write("and now I am appending some content inside the file  ")
+
+# r.close()
+
+
+
+
+
