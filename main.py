@@ -35,655 +35,870 @@
 # print(type(b))
 
 
-"""strings"""
+"""Strings and basic Python operations"""
 
+# Example of a string and slicing
 # a = "SHER CODER"
+# print(a[::])  # prints the whole string. [::] means start to end with step 1
 
-
-# print(a[::])
-
+# Example of integer division
 # a = 12 
+# print(12/3)  # division, result is 4.0 (float)
 
-# print(12/3)
-
+# Using f-strings for formatted output
 # name = "akarsh"
 # age = "23"
+# print(f"My name is {name} and my age is {age}")
 
-# print(f"my name is {name} and my age is {age}")
-
-# age = int(input("hello what is your age"))
-
+# Taking input from user (input returns string by default)
+# age = int(input("Hello, what is your age: "))
 # print(age)
 
+# Basic arithmetic operations
 # a = 5
 # b = 32
+# print(a + b)   # addition
+# print(b - a)   # subtraction
+# print(a * b)   # multiplication
+# print(b//a)    # integer division
+# print(b/a)     # float division
+# print(5**100)  # exponentiation
+# print(32%5)    # modulus (remainder)
 
+# Operator precedence example
+# print(12+4/2)  # division happens first, then addition
 
-# print(a + b)
-# print(b - a)
-# print(a * b)
-# print(b//a)
-# print(b/a)
-# print(5**100)
-# print(32%5)
-
-
-# print(12+4/2)
-
-
-#assignment operators 
-
-# a = 23
-
-#compound assignmet operations
-
+# Assignment operators and compound assignment
 # a = 20
-
-# a += 20
+# a += 20  # a = a + 20
 # a += 40
 # a += 60
-# a-=
-# a*=
-# a/=
-# a//=
-# a**=
-
+# a -= 10  # a = a - 10
+# a *= 2   # a = a * 2
+# a /= 5   # a = a / 5
+# a //= 3  # a = a // 3
+# a **= 2  # a = a ** 2
 # print(a)
 
+# Comparison operators
 # a = 12.1
-# b = 12 
+# b = 12
+# print(a == b)   # equality check
+# print(a != b)   # inequality check
+# print(a > b)    # greater than
+# print(45 < 67)  # less than
+# print(23 >= 23) # greater than or equal
+# print(45 <= 45) # less than or equal
 
-# print(a == b)
+# ASCII values and string comparison
+# print(ord("A"))  # prints ASCII value of A = 65
+# print(ord("B"))  # prints ASCII value of B = 66
+# print("ABC" > "ACD")  # string comparison (lexicographic)
+# print("A" > 34)  # will give error: cannot compare str and int
 
-# print(a != b)
+# Logical operators
+# print(12 > 20 and 123 > 100 and 34 == 34 and 45 < 90)  # AND operator
+# print(12 != 12 or 23 == 45 or 67 == 56 or 10 > 5)       # OR operator
+# print(not 12 == 12)  # NOT operator
 
-# print(a > b)
-# print(45 < 67)
-# print(23 >= 23)
-# print(45 <= 45)
-
-
-# print(ord("A"))
-# print(ord("B"))
-
-# print("ABC" > "ACD")
-
-# print("A" > 34)
-
-# print(12 >20 and 123 > 100 and 34 == 34 and 45 < 90)
-
-# print(12 !=12 or 23 ==45 or 67 == 56 or 10 > 5)
-
-# print(not 12 == 12)
-
-#IF else 
-
+# IF-ELSE examples
 # a = 6
-
 # if a > 10:
 #     print("I will do task A")
-
 # else:
 #     print("I will do task B")
 
-# money = int(input("please provide me the money :- "))
-
+# Example using input and multiple conditions (if-elif-else)
+# money = int(input("Please provide me the money: "))
 # if money == 10:
 #     print("I will have a choco bar icecream")
-
 # elif money == 20:
 #     print("I will have a mangodolly")
-
 # elif money == 30:
 #     print("I will have a frosty")
-    
 # else:
 #     print("I will have a cone")
 
-# num1 = int(input("pleae tell your first number "))
-# num2 = int(input("pleae tell your second number "))
-
+# Compare two numbers
+# num1 = int(input("Please tell your first number: "))
+# num2 = int(input("Please tell your second number: "))
 # if num1 > num2:
 #     print(f"{num1} is greater than {num2}")
 # elif num2 > num1:
 #     print(f"{num2} is greater than {num1}")
-
 # else:
-#     print("Both the numbers are same")
+#     print("Both numbers are same")
 
-
-# gen = input("please tell your gender as character (M or F):-")
-
+# Gender check example
+# gen = input("Please tell your gender as character (M or F): ")
 # if gen == 'M' or gen == 'm':
 #     print("Good morning SIR")
-# elif gen == "F" or gen == 'f':
+# elif gen == 'F' or gen == 'f':
 #     print("Good morning MAM")
-
 # else:
 #     print("Unidentified gender")
 
-
-# num = int(input("please tell your number :- "))
-
-# if num%2 == 0:
-#     print("even number")
-
+# Even or Odd check
+# num = int(input("Please tell your number: "))
+# if num % 2 == 0:
+#     print("Even number")
 # else:
 #     print("Odd number")
 
-# name = input("please tell your name : - ")
-# age = int(input("now tell your age :- "))
-
-# if age >=18 :
-#     print(f"hello {name} you are a valid vote")
-
+# Voting eligibility check
+# name = input("Please tell your name: ")
+# age = int(input("Now tell your age: "))
+# if age >= 18:
+#     print(f"Hello {name}, you are a valid voter")
 # else:
-#     print(f"hello {name} you are not a valid vote")
+#     print(f"Hello {name}, you are not a valid voter")
 
-# year = int(input("tell your year :- "))
-
-# if year %100 == 0 and year %400 == 0:
-#     print("Its a leap year")
-
-# elif  year %100 != 0 and year %4 ==0:
-#     print("Its a leap year")
-
+# Leap year check
+# year = int(input("Tell your year: "))
+# if year % 100 == 0 and year % 400 == 0:
+#     print("It's a leap year")
+# elif year % 100 != 0 and year % 4 == 0:
+#     print("It's a leap year")
 # else:
-#     print("its a normal year")
+#     print("It's a normal year")
 
-# t = int(input("please tell the temprature :- "))
-
+# Temperature conditions
+# t = int(input("Please tell the temperature: "))
 # if t < 0:
 #     print("Freezing cold")
-
-# elif t >= 0 and t <10:
-#     print("very cold")
-
-# elif t >= 10 and t <20:
-#     print("cold")
-
-# elif t >= 20 and t <30:
-#     print("plesant")
-
-# elif t >= 30 and t <40:
-#     print("hot")
-
+# elif t >= 0 and t < 10:
+#     print("Very cold")
+# elif t >= 10 and t < 20:
+#     print("Cold")
+# elif t >= 20 and t < 30:
+#     print("Pleasant")
+# elif t >= 30 and t < 40:
+#     print("Hot")
 # else:
-#     print("temprature is very hot ")
+#     print("Temperature is very hot")
+
+# Basic print
+# print("Hello world")
 
 
-# print("hello world ")
 
+# -----------------------------
+# FOR LOOP EXAMPLES
+# -----------------------------
 
-#For loop
-
-#lets print a table of 5
-# n = int(input("Which table you want ? "))
-
-# for i in range(n,(n*10)+1,n):
+# Print multiplication table of a number
+# n = int(input("Which table you want? "))
+# for i in range(n, (n*10)+1, n):
 #     print(i)
 
+# Working with strings
 # a = "SHERYIANS TEACHES INDUSTRY THINGS"
-# print(len(a))
+# print(len(a))  # prints the length of the string
 
+# Iterate through each character using index
 # for i in range(len(a)):
 #     print(a[i])
 
-
+# Iterate through each character directly
 # a = "SHERYIANS IS COOL"
-
 # for i in a:
 #     print(i)
 
-
-# for i in range(1,21):
+# For loop with break
+# for i in range(1, 21):
 #     if i == 56:
-#         print("break statement is executed")
-#         break
+#         print("Break statement is executed")
+#         break  # exit the loop immediately
 #     print(i)
-
 # else:
-#     print("Break statement is not executed")
+#     print("Break statement is not executed")  # executes only if loop wasn't broken
 
-
-# n = int(input("please tell your number"))
-
+# Print "hello world" n times
+# n = int(input("Please tell your number: "))
 # for i in range(n):
-#     print("hello world ")
+#     print("hello world")
 
-# n = int(input("please tell your number "))
-
-# for i in range(1,n+1):
+# Print numbers from 1 to n
+# n = int(input("Please tell your number: "))
+# for i in range(1, n+1):
 #     print(i)
 
-# n = int(input("please tell your number "))
-
-# for i in range(n,0,-1):
+# Print numbers from n down to 1
+# n = int(input("Please tell your number: "))
+# for i in range(n, 0, -1):
 #     print(i)
 
-
-# n = int(input("which table you want : - "))
-
-# for i in range(1,11):
+# Print multiplication table in formatted way
+# n = int(input("Which table you want: "))
+# for i in range(1, 11):
 #     print(f"{n} * {i} = {n*i}")
 
-
-# n = int(input("please tell your number:- "))
-
-# sum = 0 
-
-# for i in range(1,n+1):
+# Sum of first n numbers
+# n = int(input("Please tell your number: "))
+# sum = 0
+# for i in range(1, n+1):
 #     sum = sum + i
+# print(f"Your sum is {sum}")
 
-
-# print(f"your sum is {sum}")
-
-# n = int(input("please tell your number:- "))
-
-# fact = 1 
-
-# for i in range(1,n+1):
+# Factorial of a number
+# n = int(input("Please tell your number: "))
+# fact = 1
+# for i in range(1, n+1):
 #     fact = fact * i
+# print(f"Your factorial is {fact}")
 
-
-# print(f"your factorial is {fact}")
-
-
-# n = int(input("tell your number :- "))
+# Sum of even and odd numbers up to n
+# n = int(input("Tell your number: "))
 # even = 0
 # odd = 0
-# for i in range(1,n+1):
-#     if i%2 == 0:
-#         even = even + i
+# for i in range(1, n+1):
+#     if i % 2 == 0:
+#         even += i
 #     else:
-#         odd = odd + i
+#         odd += i
+# print(f"Your even and odd sum are {even}, {odd}")
 
-# print(f"your even and odd sum are {even} , {odd}")
-
-
-# n =int(input("which number factors you want :- "))
-
-# for i in range(1,n+1):
-#     if n%i == 0:
+# Print all factors of a number
+# n = int(input("Which number's factors you want: "))
+# for i in range(1, n+1):
+#     if n % i == 0:
 #         print(i)
 
-
-# n = int(input("check your number is perfect or not :-"))
+# Check if a number is perfect
+# n = int(input("Check if your number is perfect: "))
 # sum = 0
-# for i in range(1,n):
-#     if n%i == 0:
-#         sum = sum + i
-
+# for i in range(1, n):
+#     if n % i == 0:
+#         sum += i
 # if sum == n:
-#     print("your number is perfect")
+#     print("Your number is perfect")
 # else:
-#     print("not a perfect number")
+#     print("Not a perfect number")
 
-
-
-
-# n = int(input("check your number is prime or not  :-"))
-
+# Check if a number is prime
+# n = int(input("Check if your number is prime: "))
 # count = 0
-
-# for i in range(1,n+1):
-#     if n%i == 0:
-#         count = count + 1
-
+# for i in range(1, n+1):
+#     if n % i == 0:
+#         count += 1
 # if count == 2:
-#     print("your number is prime")
+#     print("Your number is prime")
 # else:
-#     print("your number is not prime")
+#     print("Your number is not prime")
 
-
+# Reverse a string
 # a = "SHERYIANS"
-
 # b = ""
-# for i in range(len(a)-1,-1,-1):
-#     b = b + a[i]
-
+# for i in range(len(a)-1, -1, -1):
+#     b += a[i]
 # print(b)
 
+# Check if a string is palindrome
 # a = "NAMAN"
-
 # b = ""
-# for i in range(len(a)-1,-1,-1):
-#     b = b + a[i]
-
-
+# for i in range(len(a)-1, -1, -1):
+#     b += a[i]
 # if b == a:
-#     print("your string is pallindrome")
-
+#     print("Your string is palindrome")
 # else:
-#     print("its not a pallindrome")
+#     print("It's not a palindrome")
 
+# Count characters, digits, and special characters in a string
 # a = "sdfsogn12413@#$%^&U"
-
 # char = 0
 # dig = 0
 # spchr = 0
-
 # for i in a:
 #     if i.isdigit():
-#         dig +=1 
+#         dig += 1
 #     elif i.isalpha():
-#         char+=1
+#         char += 1
 #     else:
-#         spchr +=1 
+#         spchr += 1
+# print(f"Your digits are {dig}\nYour alphabets are {char}\nYour special characters are {spchr}")
 
-# print(f"your digits are {dig}\nyour alphabets are {char}\nyour special characters are {spchr}")
-
+# View all string methods
 # print(dir(str))
 
-# a = 1 
+# -----------------------------
+# WHILE LOOP EXAMPLES
+# -----------------------------
 
+# Print numbers from 1 to 30 using while loop
+# a = 1
 # while a <= 30:
 #     print(a)
-#     a = a + 1
+#     a += 1
 
-
-# a = int(input("tell your number"))
-
+# Reverse a number
+# a = int(input("Tell your number: "))
 # rev = 0
-
 # while a > 0:
-#     rev = rev *10 + a % 10
-#     a = a //10
-
+#     rev = rev * 10 + a % 10
+#     a = a // 10
 # print(rev)
 
-
-# a = int(input("tell your number"))
-
+# Check if a number is palindrome
+# a = int(input("Tell your number: "))
 # copy = a
 # rev = 0
-
 # while a > 0:
-#     rev = rev *10 + a % 10
-#     a = a //10
-
+#     rev = rev * 10 + a % 10
+#     a = a // 10
 # if copy == rev:
-#     print("pallindromic number")
+#     print("Palindromic number")
 # else:
-#     print("not a pallindromic number")
+#     print("Not a palindromic number")
 
 
-
+# -----------------------------
+# RANDOM NUMBER GUESSING GAME
+# -----------------------------
 # import random
-
-# num = random.randint(1,10)
-
+# num = random.randint(1,10)  # Generate random number between 1 and 10
 # tries = 0
 
 # while True:
-#     guess = int(input("please guess your number between 1 and 10 :- "))
+#     guess = int(input("Please guess a number between 1 and 10: "))
+#     tries += 1
 #     if num == guess:
-#         tries +=1
-#         print(f"you are right you guessed the number is {tries} tries")
+#         print(f"You are right! You guessed the number in {tries} tries")
 #         break
-
 #     elif num < guess:
-#         print("go a little lower")
-#         tries +=1
-    
+#         print("Go a little lower")
 #     elif num > guess:
-#         print("go a little higher")
-#         tries +=1
+#         print("Go a little higher")
+# print(12)  # Just a print statement outside loop
 
-#     else:
-#         tries +=1 
-#         print("sorry you are wrong")
-
-# print(12)
-
-
+# -----------------------------
+# FUNCTIONS
+# -----------------------------
+# Simple function without arguments
 # def hello():
-#     print("this is a hello function so I am doing hello")
+#     print("This is a hello function")
 
+# hello()  # Call the function
 
-# hello()
+# Function with parameters
+# def hello(name, age):
+#     print(f"Your name is {name} and your age is {age}")
 
+# hello(age=22, name="akarsh")  # Calling with named arguments
 
-# def hello(name,age):
-#     print(f"your name is {name} and your age is {age}")
-
-# hello(age = 22,name = "akarsh")
-
-
-# def pallindrome(st):
+# Function to check palindrome
+# def palindrome(st):
 #     rev = ""
-#     for i in range(len(st)-1,-1,-1):
-#         rev = rev + st[i]
-    
+#     for i in range(len(st)-1, -1, -1):
+#         rev += st[i]
 #     if rev == st:
-#         print(f"{st} is a pallindrome")
+#         print(f"{st} is a palindrome")
 #     else:
-#         print(f"{st} is not a not a pallindrome")
+#         print(f"{st} is not a palindrome")
 
+# palindrome("NAMAN")
+# palindrome("CURSOR")
 
-# pallindrome("NAMAN")
-# pallindrome("CURSOR")
-
+# Function with return value
 # def hello():
-#     return "hello how are you"
+#     return "Hello, how are you"
 
 # print(hello())
 
-
+# -----------------------------
+# LISTS
+# -----------------------------
 # a = [12,13,14,15,16,34.5]
 
-
-# #1st way using index
-
+# # Iterating using index
 # for i in range(len(a)):
 #     print(a[i])
 
-# #2nd way directly on values
-
+# # Iterating directly over elements
 # for i in a:
 #     print(i)
 
+# Separate positive and negative elements
 # l = [-45,67,12,-68,-69,34]
-
-# print("positive elements are ")
+# print("Positive elements are:")
 # for i in l:
 #     if i >= 0:
 #         print(i)
-# print("negitive elements are")
-
+# print("Negative elements are:")
 # for i in l:
 #     if i < 0:
 #         print(i)
 
+# Average of list
 # l = [12,435,67,89,23,25,69]
-
 # sum = 0
-
 # for i in l:
-#     sum = sum + i
+#     sum += i
+# print(sum / len(l))  # average
 
-# print(sum/len(l))
-
-
-
-
-
+# Find largest element and its index
 # l = [12,567,43,235,347,568,45,7]
-
 # largest = l[0]
 # index = 0
-
 # for i in range(len(l)):
 #     if l[i] > largest:
 #         largest = l[i]
 #         index = i
+# print(f"Largest number is {largest} at index {index}")
 
-# print(f"your largest number is {largest} at index {index}")
-
-
+# Find largest and second largest
 # l = [12,16,13,19,17]
-
 # largest = l[0]
 # sec_largest = l[0]
-
 # for i in l:
 #     if i > largest:
 #         sec_largest = largest
 #         largest = i
 #     elif i > sec_largest:
 #         sec_largest = i
+# print(f"Second largest: {sec_largest}, Largest: {largest}")
 
-
-# print(sec_largest, largest)
-
-
-
+# Check if list is sorted
 # a = [12,13,18,15,16]
-
 # for i in range(len(a)-1):
 #     if a[i] < a[i+1]:
 #         continue
 #     else:
-#         print("your list is not sorted")
+#         print("Your list is not sorted")
 #         break
 # else:
-#     print("your list is sorted")
+#     print("Your list is sorted")
 
-
-
-# a = (1,2,3,4,5,5,5.5,print(),"hello")
-
-
-# count = a.count(5)
-
+# -----------------------------
+# TUPLES
+# -----------------------------
+# a = (1,2,3,4,5,5,5.5,print(),"hello")  # tuples can store multiple types
+# count = a.count(5)  # count occurrences of 5
 # print(count)
 
+# a = (1,)  # single-element tuple
+# print(type(a))  # <class 'tuple'>
 
-# a = (1,)
-
-# print(type(a))
-
-
-
-# a = {1,8,9,"hello",2,3,4,5}
-
+# -----------------------------
+# SETS
+# -----------------------------
+# a = {1,8,9,"hello",2,3,4,5}  # unordered, unique elements
 # for i in a:
-#     print(i)
+#     print(i)  # iteration order may vary
 
 # a = {8,1,2,3,4}
+# a.clear()  # remove all elements
+# print(a)   # prints set()
 
-# a.clear()
-
-# print(a)
-
-
+# Set difference
 # a = {1,2,3,4,5}
 # b = {4,5,6,7,8}
-
-# b -= a
-
+# b -= a  # remove elements of a from b
 # print(b)
 
-# d = {10:100,20:200,30:300,40:400}
-
-# d[10] = 100 #updating
-# d[50] = 500 # creating
-# del d[30] # deleting 
-
+# -----------------------------
+# DICTIONARIES
+# -----------------------------
+# d = {10:100, 20:200, 30:300, 40:400}
+# d[10] = 100  # update
+# d[50] = 500  # create
+# del d[30]    # delete
 # print(d)
 
-
-
-
+# Access dictionary items
 # d = {10:100,20:200,30:300,40:400}
+# print(d.items())  # returns list of key-value tuples
 
-# print(d.items())
-
+# Merge two dictionaries
 # d1 = {10:100,20:200,40:300}
 # d2 = {40:400,50:500,60:600}
-
-
 # for i in d2:
-#     d1[i] = d2[i]
-
+#     d1[i] = d2[i]  # add/update keys
 # print(d1)
 
+# Sum of dictionary values
 # d1 = {10:100,20:200,40:300}
 # sum = 0
-
 # for i in d1:
-#     sum = sum + d1[i]
-
+#     sum += d1[i]
 # print(sum)
 
-
+# Count occurrences of elements in a list using dictionary
 # a = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,7,8]
-
 # d = {}
 # for i in a:
 #     if i in d.keys():
-#         d[i] +=1 
+#         d[i] += 1
 #     else:
 #         d[i] = 1
-
 # print(d)
 
-
+# Merge dictionaries and sum values for common keys
 # d1 = {10:100,20:200,40:300}
 # d2 = {40:400,50:500,60:600}
-
 # for i in d2:
 #     if i in d1.keys():
-#         d1[i] += d2[i]
+#         d1[i] += d2[i]  # sum values if key exists
 #     else:
-#         d1[i] = d2[i]
+#         d1[i] = d2[i]   # create new key
+# print(d1)
 
 
 
-# a = int(input("tell your number :- "))
+# -----------------------------
+# RANDOM NUMBER GUESSING GAME
+# -----------------------------
+# import random
+# num = random.randint(1,10)  # Generate random number between 1 and 10
+# tries = 0
 
-# try:
-#     print(10/a)
+# while True:
+#     guess = int(input("Please guess a number between 1 and 10: "))
+#     tries += 1
+#     if num == guess:
+#         print(f"You are right! You guessed the number in {tries} tries")
+#         break
+#     elif num < guess:
+#         print("Go a little lower")
+#     elif num > guess:
+#         print("Go a little higher")
+# print(12)  # Just a print statement outside loop
 
-# except Exception as err:
-#     print(f"sorry there is an err as {err}")
+# -----------------------------
+# FUNCTIONS
+# -----------------------------
+# Simple function without arguments
+# def hello():
+#     print("This is a hello function")
 
+# hello()  # Call the function
+
+# Function with parameters
+# def hello(name, age):
+#     print(f"Your name is {name} and your age is {age}")
+
+# hello(age=22, name="akarsh")  # Calling with named arguments
+
+# Function to check palindrome
+# def palindrome(st):
+#     rev = ""
+#     for i in range(len(st)-1, -1, -1):
+#         rev += st[i]
+#     if rev == st:
+#         print(f"{st} is a palindrome")
+#     else:
+#         print(f"{st} is not a palindrome")
+
+# palindrome("NAMAN")
+# palindrome("CURSOR")
+
+# Function with return value
+# def hello():
+#     return "Hello, how are you"
+
+# print(hello())
+
+# -----------------------------
+# LISTS
+# -----------------------------
+# a = [12,13,14,15,16,34.5]
+
+# # Iterating using index
+# for i in range(len(a)):
+#     print(a[i])
+
+# # Iterating directly over elements
+# for i in a:
+#     print(i)
+
+# Separate positive and negative elements
+# l = [-45,67,12,-68,-69,34]
+# print("Positive elements are:")
+# for i in l:
+#     if i >= 0:
+#         print(i)
+# print("Negative elements are:")
+# for i in l:
+#     if i < 0:
+#         print(i)
+
+# Average of list
+# l = [12,435,67,89,23,25,69]
+# sum = 0
+# for i in l:
+#     sum += i
+# print(sum / len(l))  # average
+
+# Find largest element and its index
+# l = [12,567,43,235,347,568,45,7]
+# largest = l[0]
+# index = 0
+# for i in range(len(l)):
+#     if l[i] > largest:
+#         largest = l[i]
+#         index = i
+# print(f"Largest number is {largest} at index {index}")
+
+# Find largest and second largest
+# l = [12,16,13,19,17]
+# largest = l[0]
+# sec_largest = l[0]
+# for i in l:
+#     if i > largest:
+#         sec_largest = largest
+#         largest = i
+#     elif i > sec_largest:
+#         sec_largest = i
+# print(f"Second largest: {sec_largest}, Largest: {largest}")
+
+# Check if list is sorted
+# a = [12,13,18,15,16]
+# for i in range(len(a)-1):
+#     if a[i] < a[i+1]:
+#         continue
+#     else:
+#         print("Your list is not sorted")
+#         break
 # else:
-#     print("good there is no exception")
+#     print("Your list is sorted")
 
-# finally:
-#     print("i will run no matter what")
+# -----------------------------
+# TUPLES
+# -----------------------------
+# a = (1,2,3,4,5,5,5.5,print(),"hello")  # tuples can store multiple types
+# count = a.count(5)  # count occurrences of 5
+# print(count)
 
+# a = (1,)  # single-element tuple
+# print(type(a))  # <class 'tuple'>
 
-# print("ok i have done the division")
+# -----------------------------
+# SETS
+# -----------------------------
+# a = {1,8,9,"hello",2,3,4,5}  # unordered, unique elements
+# for i in a:
+#     print(i)  # iteration order may vary
 
+# a = {8,1,2,3,4}
+# a.clear()  # remove all elements
+# print(a)   # prints set()
 
+# Set difference
+# a = {1,2,3,4,5}
+# b = {4,5,6,7,8}
+# b -= a  # remove elements of a from b
+# print(b)
 
+# -----------------------------
+# DICTIONARIES
+# -----------------------------
+# d = {10:100, 20:200, 30:300, 40:400}
+# d[10] = 100  # update
+# d[50] = 500  # create
+# del d[30]    # delete
+# print(d)
 
-# age = int(input("tell your age :- "))
+# Access dictionary items
+# d = {10:100,20:200,30:300,40:400}
+# print(d.items())  # returns list of key-value tuples
 
-# try:
+# Merge two dictionaries
+# d1 = {10:100,20:200,40:300}
+# d2 = {40:400,50:500,60:600}
+# for i in d2:
+#     d1[i] = d2[i]  # add/update keys
+# print(d1)
 
-#     if age < 10 or age > 18:
-#         raise ValueError("your age must be between 10 and 18")
+# Sum of dictionary values
+# d1 = {10:100,20:200,40:300}
+# sum = 0
+# for i in d1:
+#     sum += d1[i]
+# print(sum)
+
+# Count occurrences of elements in a list using dictionary
+# a = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,7,8]
+# d = {}
+# for i in a:
+#     if i in d.keys():
+#         d[i] += 1
 #     else:
-#         print("welcome to the club")
+#         d[i] = 1
+# print(d)
 
-# except Exception as err:
-#     print(f"an error occured as {err}")
-
-
-# print("the club will start soon")
-
-#File handling
-
-# r = open("superman.txt",'a')
-
-# r.write("and now I am appending some content inside the file  ")
-
-# r.close()
+# Merge dictionaries and sum values for common keys
+# d1 = {10:100,20:200,40:300}
+# d2 = {40:400,50:500,60:600}
+# for i in d2:
+#     if i in d1.keys():
+#         d1[i] += d2[i]  # sum values if key exists
+#     else:
+#         d1[i] = d2[i]   # create new key
+# print(d1)
 
 
 
+# -----------------------------
+# ABSTRACT CLASSES
+# -----------------------------
+# from abc import ABC, abstractmethod
 
+# Abstract base class
+# class Abstract(ABC):
+#     @abstractmethod
+#     def perimeter(self):
+#         pass  # must be implemented in child class
+    
+#     @abstractmethod
+#     def area(self):
+#         pass  # must be implemented in child class
 
+# class Square(Abstract):
+#     def __init__(self, side):
+#         self.side = side
+#     def perimeter(self):
+#         print("I have created perimeter for square")
+#     def area(self):
+#         print("I have created area for square")
+
+# class Circle(Abstract):
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def perimeter(self):
+#         print("I have created perimeter for circle")
+#     def area(self):
+#         print("I have created area for circle")
+
+# obj = Circle(7)
+# obj2 = Square(12)
+
+# -----------------------------
+# OPERATOR OVERLOADING
+# -----------------------------
+# class Animal:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def __str__(self):
+#         return f"Hello, your name is {self.name}"
+#     def __add__(self, other):
+#         total_age = self.age + sum(o.age for o in other)
+#         return f"Sum of ages: {total_age}"
+
+# obj = Animal("lion", 12)
+# obj2 = Animal("dolphin", 14)
+# obj3 = Animal("tiger", 34)
+# print(obj + (obj2, obj3))
+
+# -----------------------------
+# PROPERTY DECORATOR
+# -----------------------------
+# class Animal:
+#     @property
+#     def show(self):
+#         print("Hello, how are you")
+
+# obj = Animal()
+# obj.show  # accessed like attribute, not function
+
+# -----------------------------
+# DECORATORS
+# -----------------------------
+# def decorate(func):
+#     def wrapper(*args, **kwargs):
+#         print("Addition to your numbers is: ")
+#         func(*args, **kwargs)
+#         print("Thank you! I hope you liked it")
+#     return wrapper
+
+# @decorate
+# def addition(a, b):
+#     print(f"Your total is {a + b}")
+
+# addition(12, 67)
+
+# -----------------------------
+# VARIABLE KEYWORD ARGUMENTS
+# -----------------------------
+# def information(**kwargs):
+#     print("Your information is:\n")
+#     for key in kwargs:
+#         print(f"{key} : {kwargs[key]}")
+
+# information(name="Akarsh", age=23, designation="AI/ML")
+
+# -----------------------------
+# DICTIONARY COMPREHENSIONS
+# -----------------------------
+# l = {i: i**2 for i in range(1, 10)}
+# print(l)
+
+# -----------------------------
+# MAP FUNCTION
+# -----------------------------
+# a = [1,2,3,4,5]
+# def double(x):
+#     return x * 2
+# result = map(double, a)
+# print(list(result))
+
+# -----------------------------
+# PRINT PATTERNS
+# -----------------------------
+# n = int(input("How many rows you want: "))
+# for i in range(1, n+1):
+#     for j in range(i):
+#         print("* ", end="")
+#     print()
+
+# n = int(input("Tell how many rows you want: "))
+# for i in range(1, n+1):
+#     for j in range(n-i):
+#         print("  ", end="")  # spaces
+#     for k in range(i):
+#         print("* ", end="")
+#     print()
+
+# -----------------------------
+# STRONG NUMBER CHECK
+# -----------------------------
+# a = 1234
+# copy = a
+# total = 0
+# while a > 0:
+#     digit = a % 10
+#     fact = 1
+#     for i in range(1, digit+1):
+#         fact *= i
+#     total += fact
+#     a //= 10
+# if total == copy:
+#     print("This is a strong number")
+# else:
+#     print("Not a strong number")
+
+# -----------------------------
+# PRIME NUMBERS
+# -----------------------------
+# for j in range(2, 21):
+#     a = j
+#     for i in range(2, (a//2)+1):
+#         if a % i == 0:
+#             break
+#     else:
+#         print(a)
+
+# -----------------------------
+# MOST FREQUENT ELEMENT
+# -----------------------------
+# a = [1,1,1,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,5,5,5]
+# count_dict = {}
+# for i in a:
+#     if i in count_dict:
+#         count_dict[i] += 1
+#     else:
+#         count_dict[i] = 1
+# max_count = max(count_dict.values())
+# for key in count_dict:
+#     if count_dict[key] == max_count:
+#         print(f"{key} occurred {max_count} times (largest occurrence)")
+#         break
